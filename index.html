@@ -1,0 +1,161 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width= , initial-scale=1.0">
+        <title>Document</title>
+        
+        <style>
+           
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+        /* <!-- 以上為套件 --> */
+        </style>
+        <link rel="stylesheet" href="./index.css">
+       <!-- 以下為套件 -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        <style>
+     
+  
+        .swiper-container {
+          width: 100%;
+          height: 100%;
+        }
+  
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+  
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+  
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      </style>
+    </head>
+    <div class=container>
+
+    
+                <body>
+                
+                    <header>
+                        <nav class="menu">
+                            <div class="menu-bar">                 
+                                    <ul class="menu-list">
+                                        <li class="1_1"> <a href="">首頁</a> </li>
+                                        <li class="1_2"> <a href="">關於我們</a> </li>
+                                        <li class="1_3"> <a href="">退休要諮商?</a> </li>
+                                        <li class="evaluation"><a href="">享退初評估</a><ul></ul></li>
+                                        <li><a href="">選購諮商專案</a><ul></ul></li>
+                                        <li><a href="">退休好文</a></li>
+                                    </ul>
+                                    <ul class="menu-2list" >
+                                        <li class="car"><img src="./image/shopping-cart.png" ></li>
+                                        <li class="resign"><img src="./image/outline_perm_identity_black_48dp.png" ></li>
+                                    </ul >        
+                            </div>
+                        </nav>
+                    </header>
+                    <main>
+                                <div class="banner">
+                                        <!-- <div class="logo"> -->
+                                        <img src="./image/lgo.png" height="120px">
+                                        <!-- </div>        -->
+                                </div>
+                                <!-- <div class="background">        -->
+                                <div class="guide">
+                                    <div class="guide_0"><p>退休要諮商?</p></div>
+                                    <div class="guide_1"><p>享退初評估</p></div>
+                                    <div class="guide_2"><p>測驗結果</p> </div>
+                                    <div class="guide_3"><p>選購諮商專案</p></div>
+                                </div>
+                                <div class="main_content">
+                                    <div class="articleclick -index-1"><div class="fit"><img src="./image/main-content/health.png" height="280px"></div></div>
+                                    <div class="articleclick -index-2"><div class="fit"><img src="./image/main-content/fanacil2.png" height="280px"><P></P></div></div>
+                                    <div class="articleclick -index-3"><div class="fit"><img src="./image/main-content/relationship.jpg" width="280px"></div></div>
+                                    <div class="articleclick -index-4"><div class="fit"><img src="./image/main-content/space12.jpg" width="280px"></div></div>
+                                    
+                                </div>
+                                <div class="space"></div>
+                                
+                                <!-- <div class="spaceblock"></div> -->
+        
+                                <div class="swiper-container mySwiper">
+                                    <div class="swiper-wrapper">
+                                      <div class="swiper-slide" style="background-image: url(./image/carousel/carousel3.png);" ><p>還在煩惱嗎 ?</p> </div>
+                                      <div class="swiper-slide" style="background-image: url(./image/carousel/carousel6.jpg);"><p>進行簡單的測驗</p></div>
+                                      <div class="swiper-slide" style="background-image: url(./image/carousel/carousel5.jpg);"><p>選購適合專案，預約訪談!</p>></div>
+                                  
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-pagination"></div>
+                                  </div>
+                                
+                                <div class="map">
+                                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7229.420596749635!2d121.52403138554652!3d25.043903737982912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1620364629201!5m2!1szh-TW!2stw" width="1100" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
+
+                                <div class="btn_fixed"><img src="./image/owl.png" ></div>
+                        </div> 
+                    </main>
+                                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
+                                    <script>
+                                            var swiper = new Swiper(".mySwiper", {
+                                            pagination: {
+                                            el: ".swiper-pagination",
+                                            type: "progressbar",
+                                            },
+                                            navigation: {
+                                            nextEl: ".swiper-button-next",
+                                            prevEl: ".swiper-button-prev",
+                                            },
+                                        });
+                                </script>
+                                
+                </body>
+                <footer>
+                        <div class="footer_content">
+                          
+                          <section class="grid_item1"><img src="./image/icons/facebook-circular-logo.png" height="60px" width="60px"></section>
+                          <section class="grid_item2"><img src="./image/icons/line.png" height="60px" width="60px"></section>
+                          <section class="grid_item3"><img src="./image/icons/twitter.png" height="60px" width="60px"></section>
+                          <aside class="grid_item4">聯絡我們</aside> 
+                          <main class="grid_item5">
+                          <p class="word">營業時間</p>
+                          <p class="time">周一至周五:9:00-18:00</p> 
+                          </main>
+                          <footer class="grid_item6">
+                            <p class="service">服務條款</p> 
+                            <p class="secret">本網站為緯育TiBaMe_前端設計工程師第___期學員專題成果作品
+                              此為緯育緯育TiBaMe提供給Web前端設計工程師養成班學員展示作品之平台
+                              若有侵權疑慮，請私訊[TiBaMe-前端設計工程師養成班]</p>
+                          </footer> 
+                        </div>
+                </footer>
+      
+    </html>
+     

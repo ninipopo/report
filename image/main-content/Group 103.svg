@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="303" height="122.25" viewBox="0 0 303 122.25">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke: #000;
+      }
+
+      .cls-1 {
+        stroke-width: 2px;
+        font-size: 92px;
+        font-family: Arial-BoldMT, Arial;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g id="Group_103" data-name="Group 103" transform="translate(-277 -1045.25)">
+    <g id="Group_47" data-name="Group 47" transform="translate(-610.365 424)">
+      <text id="_30" data-name="30" class="cls-1" transform="translate(889.365 639.5)"><tspan x="-51.166" y="83">30</tspan></text>
+      <path id="Icon_awesome-plus" data-name="Icon awesome-plus" class="cls-2" d="M29.25,14.625H19.125V4.5a2.25,2.25,0,0,0-2.25-2.25h-2.25a2.25,2.25,0,0,0-2.25,2.25V14.625H2.25A2.25,2.25,0,0,0,0,16.875v2.25a2.25,2.25,0,0,0,2.25,2.25H12.375V31.5a2.25,2.25,0,0,0,2.25,2.25h2.25a2.25,2.25,0,0,0,2.25-2.25V21.375H29.25a2.25,2.25,0,0,0,2.25-2.25v-2.25A2.25,2.25,0,0,0,29.25,14.625Z" transform="translate(1069.483 621.5)"/>
+    </g>
+  </g>
+</svg>

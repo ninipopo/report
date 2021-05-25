@@ -74,6 +74,7 @@
             <div class="banner"></div>
         
     <body>
+      <div class="btn_fixed"><a href="#top"><img src="./image/owl.png" ></a></div>
       <main>
         <div class="guide-section">
             <div class="guide_1">
@@ -150,10 +151,15 @@
               <iframe  id="map_1" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7229.420596749635!2d121.52403138554652!3d25.043903737982912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1620364629201!5m2!1szh-TW!2stw" width="1200px" height="300px"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
-            <div class="btn_fixed"><img src="./image/owl.png" ></div>
+            
       </div> 
 </main>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>$("a[href='#top']").click(function() {
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+      return false;
+    });
+    </script>    
     <script>
             var swiper = new Swiper(".mySwiper", {
             pagination: {

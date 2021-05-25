@@ -183,8 +183,9 @@ div.img4,div.img4_1{
 
 
 div.btn_fixed {
-    bottom: 200px;
-    right: 10%;
+    bottom: 0;
+    right: 0;
+    /* 這樣的絕對位置較佳 */
     position: fixed;
     background-color: rgba(240, 207,101,1);
     box-shadow:0px 0px 10px rgba(240, 207,101,0.5) inset;

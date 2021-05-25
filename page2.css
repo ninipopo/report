@@ -19,14 +19,14 @@ div.top{
     position: relative;
     z-index:1 ;
     /* height: 4967px; */
-    background-image: url(./image/main-content/Group\ 101.png);
+    /* background-image: url(./image/main-content/Group\ 101.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top -40px left 0px;
     /* opacity: 90%; */
-    overflow: hidden;
+    /*overflow: hidden; */
 }
-div.top::after{
+/* div.top::after{
     content: "";
     display: block;
     border: 16px solid rgb(235, 180, 203);
@@ -36,13 +36,13 @@ div.top::after{
     left:10px;
     top:70px ;
     z-index: 2;
-}
-p#title{
+} */
+h1#title{
     display: inline-block;
-    width: 320px;
+    width: 500px;
     height: 130px; 
-    font-family: 'Potta One', cursive !important; 
-    font-size: 48px;  
+    /* font-family: 'Potta One', cursive !important;  */
+    font-size: 72px;  
 } 
  div.background{
     height: 732px;
@@ -56,6 +56,7 @@ div.connect{
     z-index: 4;
     position: relative;
 }
+
 div.connect_index-1{
     /* margin: 0; */
     border: 0;
@@ -68,6 +69,15 @@ div.connect_index-1{
     position: absolute;
     left: 200px;
     top: 300px;
+}
+div.connect_index-1 >a{
+    text-decoration: none;
+    color: black;
+}
+div#cube_1:hover{
+    background-color: #93b5c6;
+    transform: scale(1.2);
+    cursor: pointer;
 }
 div#cube_1{
     width: 350px ;
@@ -88,7 +98,12 @@ div#cube_1 img{
     position: absolute;
     /* #此置中方法只適用於圖比div小 */
 }
-   
+
+div#cube_2:hover{
+    background-color: #93b5c6;
+    transform: scale(1.2);
+    cursor: pointer;
+}   
 div#cube_2{
     width: 350px ;
     height: 350px;
@@ -106,6 +121,11 @@ div#cube_2 img{
     position: absolute;
     /* #此置中方法只適用於圖比div小 */
 }
+div#cube_3:hover{
+    background-color: #93b5c6;
+    transform: scale(1.2);
+    cursor: pointer;
+} 
 div#cube_3{
     width: 350px ;
     height: 350px;
@@ -124,6 +144,11 @@ div#cube_3 img{
     position: absolute;
     /* #此置中方法只適用於圖比div小 */
 }
+div#cube_4:hover{
+    background-color: #93b5c6;
+    transform: scale(1.2);
+    cursor: pointer;
+} 
 div#cube_4{
     width: 350px ;
     height: 350px;
@@ -147,6 +172,7 @@ p#cube_1,#cube_2,#cube_3,#cube_4{
     margin: 0;
     font-size: 36px;
     font-weight: bold;
+    padding: 10px;
 }
 p#cube_1{
     position: absolute;
@@ -172,11 +198,11 @@ div.bottom{
     height: 3092px;
     width: 1200px;
 }
-div.clickcontent1,.clickcontent2,.clickcontent3,.clickcontent4{
+div#clickcontent1,#clickcontent2,#clickcontent3,#clickcontent4{
     height: 723px;
     width: 1200px;
 }
-div.clickcontent1{
+div#clickcontent1{
     background-image: url(./image/main-content/Group\ 112.png);
 }
 div.content1{
@@ -184,7 +210,7 @@ div.content1{
     width:500px;
     float:right;
 }
-div.clickcontent2{
+div#clickcontent2{
     background-image: url(./image/main-content/Group\ 116.png);
 }
 div.content2{
@@ -192,7 +218,7 @@ div.content2{
     width:500px;
     float:left;
 }
-div.clickcontent3{
+div#clickcontent3{
     background-image: url(./image/main-content/Group\ 114.png);
 }
 div.content3{
@@ -200,7 +226,7 @@ div.content3{
     width:500px;
     float:right;
 }
-div.clickcontent4{
+div#clickcontent4{
     background-image: url(./image/main-content/Group\ 117.png);
     background-position: top -5px;
 }

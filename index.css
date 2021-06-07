@@ -69,7 +69,8 @@ div.head_2{
     height: 120px;
 }
 
-a#icon:hover{
+.head_1:hover{
+    top: 30px;
     transform:scale(1.25,1.25);
     transition:transform 0.25s ease;
     }
@@ -80,7 +81,8 @@ a#member{
     font-weight: bold;
     /* width: 180px; */
 }
-a#member:hover{
+.head_2:hover{
+    top: 30px;
     transform:scale(1.25,1.25);
     transition:transform 0.25s ease;
 }
@@ -129,7 +131,7 @@ li.nav {
 
 }
 li.nav:hover {
-    border-bottom: 3px dotted #d7816a;
+    border-bottom: 3px solid #d7816a;
     transition:transform 0.25s ease;
 }
 /* ===這裡是hamburger==== */
@@ -217,10 +219,12 @@ li.nav:hover {
 .menu_wrap .toggler:checked~ .menu_2 >div{
     transform: scale(1);
     transition-duration: 1s;
+    border-radius: 0px 20% 20% 0%;
 }
 .menu_wrap .toggler:checked~ .menu_2 >div>div{
     opacity: 1;
     transition: opacity 0.2s ease 0.2s;
+    
 }
 
 
@@ -244,7 +248,7 @@ li.nav:hover {
 
 .menu_wrap .menu_2 >div{
     background-color: rgba(240, 207,101,.9);
-    /*border-radius: 90%;*/
+    border-radius: 0px 0px 0px 90%;
     width: 250px;
     height: 400px;
     display: flex;
@@ -272,7 +276,13 @@ li.nav:hover {
     font-weight: bolder;
     text-decoration: none;
     transition: color 0.4s ease;
+    border-bottom:3px solid transparent;
 }
+.menu_wrap .menu_2 >div >div >ul >li>a:hover{
+    color: white;
+    border-bottom:3px solid  #93b5c6;
+}
+
 
 /* ===以下為banner=== */
 .banner{
@@ -613,6 +623,11 @@ div.grid_item1,div.grid_item2,div.grid_item3{
     margin-right: 20px;
 }
 
+div.grid_item1:hover,div.grid_item2:hover,div.grid_item3:hover{
+    top: 30px;
+    transform:scale(1.25,1.25);
+    transition:transform 0.25s ease;
+}
 div.grid_item4,div.grid_item5{
     width:200px;
     height: 150px;

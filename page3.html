@@ -7,10 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="./header&footer.css">
     <link rel="stylesheet" href="./page3.css">
-    
+    <script type="text/javascript" src="/vendors/jquery/jquery-3.5.1.min.js"></script>
     
 </head>
 <body>
+  
+
   
 
     <header>
@@ -53,69 +55,126 @@
           
           <div class="banner"></div>
           <!-- 這裡是Fixed button -->
-            <div class="btn_fixed"><a href="#top"><img src="./image/owl.png" ></a></div>
-        <div class="top">
-            <div class="evaluation">
-                <div id="content">
-                    <p id="title">享退初評估</p>
-                </div>
-            </div>
-            
-            <div class="declare"><h2>人際關係諮詢前測驗</h2></div>
-            <p id="detail">在本項測驗，主要是了解您生活中，是否有足夠的人際支持網路，能夠維持您的退休生活品質。本資料已簽屬保密原則，該資料僅能由您的專責諮商師能閱讀，請如實填寫，提高資料正確性。</p>
-            
-        </div>
-        <div id="form">
-            <h2 id="formtitle">1.您是否擔心退休後，當意外發生時，無人聞問?</h2>
-            <div class="item_block">
-                
-                <div class="radio_block_1">
-                    <input type="radio" id="index_1" >
-                    <span id="space"></span>
-                    <label>非常符合</label>
-                </div>
-                <div class="radio_block_2">
-                    <input type="radio" id="index_2">
-                    <span id="space"></span>
-                    <label>符合</label>
-                </div>
-                <div class="radio_block_3">
-                    <input type="radio" id="index_3">
-                    <span id="space"></span>
-                    <label>不符合</label>
-                </div>
-                <div class="radio_block_4">
-                    <input type="radio" id="index_4" checked>
-                    <span id="space"></span>
-                    <label>完全不符合</label>
-                </div>
-            </div>
-        </div>
-        <div class="progress_bar">
-            <span class="progress" style="width: 10%;"></span>
+          <div class="btn_fixed"><a href="#top"><img src="./image/owl.png" ></a></div>
+          <div class="top">
+                    <div class="evaluation">
+                        <div id="content">
+                            <h1 id="title">享退初評估</h1>
+                        </div>
+                    </div>
+                    <div class="declare"><h2>人際關係諮詢前測驗</h2>
+                      <div id="detail"><p id="detail">在本項測驗，主要是了解您生活中，是否有足夠的人際支持網路，能夠維持您的退休生活品質。本資料已簽屬保密原則，該資料僅能由您的專責諮商師能閱讀，請如實填寫，提高資料正確性。</p></div>
+                    </div>
+                    
           </div>
-          <footer  class="footer"> 
-            <div class="foot-controller">
-              <div class="icon_controller">        
-              <div class="grid_item1"><img src="./image/icons/facebook-circular-logo.png" ></div>
-              <div class="grid_item2"><img src="./image/icons/line.png" ></div>
-              <div class="grid_item3"><img src="./image/icons/twitter.png" ></div>
-              </div> 
-              <div class="grid_item4">
-                <h3 class="word">聯絡我們</h3>
-                <h4 class="phone">03 425 1108</h4>
-              </div> 
-              <div class="grid_item5">
-                <h3 class="word">營業時間</h3>
-                <h4 class="time">周一至周五:<br>9:00-18:00</h4>
-              </div> 
-              <div class="grid_item6">
-                <h3 class="word" >服務條款</h3> 
-                <p class="secret">本網站為緯育TiBaMe_前端設計工程師第___期學員專題成果作品
-                  此為緯育緯育TiBaMe提供給Web前端設計工程師養成班學員展示作品之平台
-                  若有侵權疑慮，請私訊[TiBaMe-前端設計工程師養成班]</p>
-              </div>
-            </div>    
-        </footer>         
-      </body>   
+        <div id="form">
+          <div class="identify">
+            <h2>性別：</h2>          
+            <label class="container"><input type="checkbox"><span class="checkmark"></span><h2>男性</h2></label>
+            <label class="container"><input type="checkbox"><span class="checkmark"></span><h2>女性</h2></label>
+          </div>
+          <!-- 複選 -->
+          <div class="identify_1">
+            <h2>年齡：</h2> 
+            <label class="container"><input type="checkbox"><span class="checkmark"></span><h2>30歲</h2></label>
+            <label class="container"><input type="checkbox"><span class="checkmark"></span><h2>40歲</h2></label>
+            <label class="container"><input type="checkbox"><span class="checkmark"></span><h2>45歲</h2></label>
+            <label class="container"><input type="checkbox"><span class="checkmark"></span><h2>50歲</h2></label>
+          </div>
+        </div> 
+        <div id="bottom">
+              <h1 id="formtitle">1.您是否擔心退休後，當意外發生時，無人聞問?</h1>
+            <!-- <div class="item_block"> -->
+                <div class="radio_block">
+                  <label class="container"><input type="checkbox"><span class="checkmark"></span><h2>非常符合</h2></label>
+                </div>
+                <div class="radio_block">
+                  <label class="container"><input type="checkbox"><span class="checkmark"></span><h2>符合</h2></label>
+                </div>
+                <div class="radio_block">
+                  <label class="container"><input type="checkbox"><span class="checkmark"></span><h2>不符合</h2></label>
+                </div>
+                <div class="radio_block">
+                  <label class="container"><input type="checkbox"><span class="checkmark"></span><h2>完全不符合</h2></label>
+                </div>
+                  <!-- 單選 -->
+                <input type="range" min="0" max="5" name="range-number" width="200px">
+                <div class="button">
+                  <a href="#"><button id="submit">下一題</button></a>
+                </div>
+                
+          </div>
+              
+          
+        
+          
+              <footer  class="footer"> 
+                <div class="foot-controller">
+                  <div class="icon_controller">        
+                  <div class="grid_item1"><img src="./image/icons/facebook-circular-logo.png" ></div>
+                  <div class="grid_item2"><img src="./image/icons/line.png" ></div>
+                  <div class="grid_item3"><img src="./image/icons/twitter.png" ></div>
+                  </div> 
+                  <div class="grid_item4">
+                    <h3 class="word">聯絡我們</h3>
+                    <h4 class="phone">03 425 1108</h4>
+                  </div> 
+                  <div class="grid_item5">
+                    <h3 class="word">營業時間</h3>
+                    <h4 class="time">周一至周五:<br>9:00-18:00</h4>
+                  </div> 
+                  <div class="grid_item6">
+                    <h3 class="word" >服務條款</h3> 
+                    <p class="secret">本網站為緯育TiBaMe_前端設計工程師第___期學員專題成果作品
+                      此為緯育緯育TiBaMe提供給Web前端設計工程師養成班學員展示作品之平台
+                      若有侵權疑慮，請私訊[TiBaMe-前端設計工程師養成班]</p>
+                  </div>
+                </div>
+            <script>
+                  $('.identify label input').click(function(){
+                  if($(this).prop('checked')){
+                  $('.identify label input:checkbox').prop('checked',false);
+                  $(this).prop('checked',true);
+                  }});
+                  $('.identify_1 label input').click(function(){
+                  if($(this).prop('checked')){
+                  $('.identify_1 label input:checkbox').prop('checked',false);
+                  $(this).prop('checked',true);
+                  }});
+                  $('#bottom label input').click(function(){
+                  if($(this).prop('checked')){
+                  $('#bottom label input:checkbox').prop('checked',false);
+                  $(this).prop('checked',true);
+                  }});
+                  //以下為procesbar
+                  $.fn.RangeSlider = function(cfg){
+                  this.sliderCfg = {
+                      min: cfg && !isNaN(parseFloat(cfg.min)) ? Number(cfg.min) : null, 
+                      max: cfg && !isNaN(parseFloat(cfg.max)) ? Number(cfg.max) : null,
+                      step: cfg && Number(cfg.step) ? cfg.step : 1,
+                      callback: cfg && cfg.callback ? cfg.callback : null
+                  };
+
+                  var $input = $(this);
+                  var min = this.sliderCfg.min;
+                  var max = this.sliderCfg.max;
+                  var step = this.sliderCfg.step;
+                  var callback = this.sliderCfg.callback;
+
+                  $input.attr('min', min)
+                      .attr('max', max)
+                      .attr('step', step);
+
+                  $input.bind("input", function(e){
+                      $input.attr('value', this.value);
+                      $input.css( 'background', 'linear-gradient(to right, #059CFA, white ' + this.value + '%, white)' );
+
+                      if ($.isFunction(callback)) {
+                          callback(this);
+                          }
+                      });
+                  };
+            </script>    
+            </footer>         
+      </body>       
 </html>

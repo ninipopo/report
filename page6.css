@@ -1,12 +1,41 @@
-*{
-    box-sizing: border-box;
-    font-family:'Noto Sans TC', sans-serif !important;
-} 
-h2{
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
+
+/* ===以下為banner=== */
+.banner{
+    height: 800px;
+    width: 100%;
+    max-width:1920px;
+    /* margin-top: 40px; */
+    position:relative;
+    background-image: url(./image/page5/page5.banner.jpg);
+    box-shadow:0px 0px 10px rgba(0, 0,0,0.5);
+    box-shadow:0px 0px 2px 0px rgba(240, 207,101,0.5) inset;
+    background-position:50% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* transform:translateY( 30px) ; */
 }
+@media (min-width: 1920px){
+    div.banner{background-image: url(./image/page5/page5.banner.jpg)}
+}
+@media screen and (min-width: 575px) and (max-width: 800px){
+    div.banner{background-image: url(./image/page5/page5.banner-2.png)}
+}
+
+.banner img{
+    vertical-align: center;
+    margin-left:480px;
+    /* size:50%; */
+    /* max-width: 80%; */
+    height: auto;
+    margin: 0;
+    border: 0;
+    position: absolute;
+    top: -60px;
+    /* left: 480px; */
+}
+
+
+
 div.evaluation{
     height: 220px;
     background-color: white;
@@ -21,12 +50,8 @@ div.evaluation #content{
     z-index: 3;
 }
 /* div.aboutus #content::after{ */
-div.top{
-    position: relative;
-    z-index:1 ;
-    height: 1352px;
-}
-div.top::after{
+
+/* div.top::after{
     content: "";
     display: block;
     border: 16px solid rgb(235, 180, 203);
@@ -36,7 +61,7 @@ div.top::after{
     left:10px;
     top:70px ;
     z-index: 2;
-}
+} */
 
 p#title{
     display: inline-block;
@@ -44,4 +69,16 @@ p#title{
     height: 130px; 
     font-family: 'Potta One', cursive !important; 
     font-size: 48px;  
+}
+/* ====以下為main-content,bootstrap==== */
+.container{
+    margin-top: 100px;
+    height: 800px;
+    border:1px solid coral;
+}
+.col-xl-3{
+    border:1px solid coral;
+}
+.col-xl-9{
+    border:1px solid coral;
 }

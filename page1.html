@@ -5,34 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./header&footer.css">
     <link rel="stylesheet" href="./page1.css">
-    <link rel="stylesheet" href="./footer.css">
+    
     
 </head>
-<div class=container>    
-    <body>
+<body>
+  
+
+    <header>
+              <div class="head_1">     
+                <a id="icon" href="./index.html"><img src="./image/icons/logo4.svg" width:"300px" height="70px"></a>
+              </div>
+              <div class="head_2">     
+                <a id="member"href="./index.html"><img src="./image/icons/user.svg" width:"300px" height="70px"></a>
+              </div>
+    </header>
     
-        <header>
-            <nav class="menu">
-                <div class="menu-bar">                 
-                        <ul class="menu-list">
-                            <li class="1_1"> <a href="./index.html">首頁</a> </li>
-                            <li class="1_2"> <a href="./page1.html">關於我們</a> </li>
-                            <li class="1_3"> <a href="./page2.html">退休要諮商?</a> </li>
-                            <li class="evaluation"><a href="./page3.html">享退初評估</a><ul></ul></li>
-                            <li><a href="">選購諮商專案</a><ul></ul></li>
-                            <li><a href="">退休好文</a></li>
-                        </ul>
-                        <ul class="menu-2list" >
-                            <li class="car"><img src="./image/shopping-cart.png" ></li>
-                            <li class="resign"><img src="./image/outline_perm_identity_black_48dp.png" ></li>
-                        </ul >        
-                </div>
-            </nav>
-            
-        </header>
-        <main class="top">
+                <!-- 這裡是hamburger -->
+                <div class="menu_wrap"> 
+                    <input type="checkbox" class="toggler">
+                    <div class="hamburger"><div></div></div>
+                    <div class="menu_2">
+                      <div>
+                        <div>
+                          <ul>
+                            <li><a href="./page1.html">關於我們</a></li>
+                            <li><a href="./page2.html">退休要諮商?</a></li>
+                            <li><a href="./page3.html">享退初評估</a></li>
+                            <li><a href="./page4.html">選購諮商專案</a></li>
+                            <li><a href="./page5.html">退休好文</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                  <nav >              
+                      <ul class="menu-list">
+                          <li class="nav"><a href="./page1.html">關於我們</a> </li>
+                          <li class="nav"><a href="./page2.html">退休要諮商?</a> </li>
+                          <li class="nav"><a href="./page3.html">享退初評估</a><ul></ul></li>
+                          <li class="nav"><a href="./page4.html">選購諮商專案</a><ul></ul></li>
+                          <li class="nav"><a href="./page5.html">退休好文</a></li>
+                      </ul>  
+                  </nav>     
+        
+          
+          <div class="banner"></div>
+          <!-- 這裡是Fixed button -->
+            <div class="btn_fixed"><a href="#top"><img src="./image/owl.png" ></a></div>
+<main class="top">
             <div class="aboutus">
                 <div id="content">
                     <p id="title">關於我們</p>
@@ -61,27 +83,29 @@
                     <h4>退休空間、政府資源整合-長照團隊領導</h4>
                 </div>
             </div>
-        </main>  
-    </body>
-    <footer>
-        <div class="footer_content">
-          
-          <section class="grid_item1"><img src="./image/icons/facebook-circular-logo.png" height="60px" width="60px"></section>
-          <section class="grid_item2"><img src="./image/icons/line.png" height="60px" width="60px"></section>
-          <section class="grid_item3"><img src="./image/icons/twitter.png" height="60px" width="60px"></section>
-          <aside class="grid_item4">聯絡我們</aside> 
-          <main class="grid_item5">
-          <p class="word">營業時間</p>
-          <p class="time">周一至周五:9:00-18:00</p> 
-          </main>
-          <footer class="grid_item6">
-            <p class="service">服務條款</p> 
-            <p class="secret">本網站為緯育TiBaMe_前端設計工程師第___期學員專題成果作品
-              此為緯育緯育TiBaMe提供給Web前端設計工程師養成班學員展示作品之平台
-              若有侵權疑慮，請私訊[TiBaMe-前端設計工程師養成班]</p>
-          </footer> 
-        </div>
-    </footer>
-
-
+</main>  
+        <footer  class="footer"> 
+            <div class="foot-controller">
+              <div class="icon_controller">        
+              <div class="grid_item1"><img src="./image/icons/facebook-circular-logo.png" ></div>
+              <div class="grid_item2"><img src="./image/icons/line.png" ></div>
+              <div class="grid_item3"><img src="./image/icons/twitter.png" ></div>
+              </div> 
+              <div class="grid_item4">
+                <h3 class="word">聯絡我們</h3>
+                <h4 class="phone">03 425 1108</h4>
+              </div> 
+              <div class="grid_item5">
+                <h3 class="word">營業時間</h3>
+                <h4 class="time">周一至周五:<br>9:00-18:00</h4>
+              </div> 
+              <div class="grid_item6">
+                <h3 class="word" >服務條款</h3> 
+                <p class="secret">本網站為緯育TiBaMe_前端設計工程師第___期學員專題成果作品
+                  此為緯育緯育TiBaMe提供給Web前端設計工程師養成班學員展示作品之平台
+                  若有侵權疑慮，請私訊[TiBaMe-前端設計工程師養成班]</p>
+              </div>
+            </div>    
+        </footer>         
+      </body>   
 </html>

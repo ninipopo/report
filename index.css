@@ -20,6 +20,10 @@ h2{
 h3{
     font-size: 32px;
 }
+h4{
+    font-size: 18px;
+    font-weight: bolder;
+}
 p{
     font-size: 28px;
     text-align: center;
@@ -34,19 +38,27 @@ nav{
     height: 80px;
     margin: 0 auto;
 }
+
  /* header區域 */
-header{ 
+header{
     height: 120px;
-    width: 100%; 
+    width: 100%;
     max-width: 1920px;
     display: flex;
     justify-content:space-between;
-    padding: 35px;   
+    padding: 35px;
 }
-@media screenscreen and (min-width: 575px) and (max-width: 800px){
+/* @media (min-width: 1920px){
+    div.menu_wrap{display: block;}
+}
+@media screen and (min-width: 575px) and (max-width: 800px){
     header{
         display: flex;
         justify-content: space-evenly;}
+} */
+
+@media (max-width: 768px) {
+    header,nav{display: none;}
 }
 div.head_1{
     width:300px;
@@ -65,7 +77,7 @@ a#member{
     text-decoration: none;
     font-size: 32px;
     /* display: block; */
-    font-weight: bold;   
+    font-weight: bold;
     /* width: 180px; */
 }
 a#member:hover{
@@ -73,9 +85,7 @@ a#member:hover{
     transition:transform 0.25s ease;
 }
 
-@media screen and (min-width: 575px) and (max-width: 767px){
-    div.nav{)}
-}
+
 
 nav a{
     color: inherit;
@@ -111,17 +121,160 @@ ul.menu-list{
 ul.menu-list>li{
     width: 200px;
     height: 60px;
-    list-style: none;   
+    list-style: none;
 }
 
 li.nav {
     align-self: center;
-    
+
 }
 li.nav:hover {
     border-bottom: 3px dotted #d7816a;
-    ransition:transform 0.25s ease;
+    transition:transform 0.25s ease;
 }
+/* ===這裡是hamburger==== */
+@media (min-width: 767px) {
+    div.menu_wrap{display: none;}
+}
+/* @media screen (min-width: 574px) {
+    div.menu_wrap{display: block;}
+} */
+.menu_wrap{
+    position:relative;
+    /* display: none; */
+    right:0;
+    top:0;
+    z-index:1;
+}
+.menu_wrap .toggler{
+    position: absolute;
+    left:0;
+    top:0;
+    z-index:2;
+    cursor:pointer;
+    width:60px;
+    height: 60px;
+    opacity: 0; /*隱藏*/
+}
+.menu_wrap .hamburger{
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index:1;
+    width:80px;
+    height: 80px;
+    padding:1rem;
+    background-color: rgba(240, 207,101,.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Hamburger Line */
+.menu_wrap  .hamburger > div {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background: #000;
+    display: flex;
+    flex:none;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+  }
+
+  /* Hamburger Lines - Top & Bottom */
+  .menu_wrap  .hamburger > div::before,
+  .menu_wrap  .hamburger > div::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -12px;
+    width: 100%;
+    height: 5px;
+    background: inherit;
+  }
+  /* Hamburger Lines-3 */
+  .menu_wrap  .hamburger > div::after {
+    top: 12px;
+  }
+/*click animate*/
+.menu_wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+}
+.menu_wrap .toggler:checked + .hamburger > div:before,
+.menu_wrap .toggler:checked + .hamburger > div:after{
+    top:0;
+    transform:rotate(90deg);
+}
+/*rotate on hover when checked*/
+.menu_wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+}
+/*==== show menu=== */
+.menu_wrap .toggler:checked~ .menu_2{
+    visibility: visible;
+}
+.menu_wrap .toggler:checked~ .menu_2 >div{
+    transform: scale(1);
+    transition-duration: 1s;
+}
+.menu_wrap .toggler:checked~ .menu_2 >div>div{
+    opacity: 1;
+    transition: opacity 0.2s ease 0.2s;
+}
+
+
+/*.menu_wrap .menu_2{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    // visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.menu_2{
+    position: absolute;
+    left: 0;
+    top: 80px;
+}
+
+.menu_wrap .menu_2 >div{
+    background-color: rgba(240, 207,101,.9);
+    /*border-radius: 90%;*/
+    width: 250px;
+    height: 400px;
+    display: flex;
+    /*flex: none;*/
+    /*justify-content: center;
+    //align-items: center;*/
+    transform: scale(0);
+    transition: all 0.2s ease-in-out;
+}
+/* .menu_wrap .menu_2 >div >div{
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+} */
+.menu_wrap .menu_2 >div >div >ul >li{
+    list-style: none;
+    color: black;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+.menu_wrap .menu_2 >div >div >ul >li>a{
+    color: inherit;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+/* ===以下為banner=== */
 .banner{
     height: 800px;
     width: 100%;
@@ -130,7 +283,7 @@ li.nav:hover {
     position:relative;
     background-image: url(./image/page1/banner.jpg);
     box-shadow:0px 0px 10px rgba(0, 0,0,0.5);
-    box-shadow:0px 0px 2px 0px rgba(240, 207,101,0.5) inset;  
+    box-shadow:0px 0px 2px 0px rgba(240, 207,101,0.5) inset;
     background-position:50% 30%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -139,7 +292,7 @@ li.nav:hover {
 @media (min-width: 1920px){
     div.banner{background-image: url(./image/page1/banner.jpg)}
 }
-@media screen and (min-width: 575px) and (max-width: 800px){
+@media screen and (min-width: 575px) and (max-width: 768px){
     div.banner{background-image: url(./image/page1/finacil6.jpg)}
 }
 
@@ -155,10 +308,17 @@ li.nav:hover {
     top: -60px;
     /* left: 480px; */
 }
+/* ====以下為maincontent=== */
 div.guide_section{
     display: flex;
     height:400px;
     /* flex-direction: column; */
+}
+@media (max-width: 768px) {
+    .guide_section {
+        height: 100%;  
+        width: 100%;
+    }
 }
 div.guide_1{
     display: flex;
@@ -226,8 +386,31 @@ div.img4,div.img4_1{
     cursor: pointer;
     /* filter:sepia(50%) */
 }
+@media (max-width: 768px) {
+    .guide {
+        height: 100%;  
+        width: 100%; 
+        display: flex;
+    }
+}
+@media (max-width: 768px) {
+    .guide > h1{
+        font-size: 28px;
+        height: 100%;  
+        width: 100%; 
+    }
+    .guide > p{
+        font-size: 16px;
+        height: 100%;  
+        width: 100%; 
+    }
+}
 
 
+/* ====以下為fixed btn=== */
+@media (max-width: 768px) {
+    div.btn_fixed{display: none;}
+}
 div.btn_fixed {
     bottom: 0;
     right: 0;
@@ -239,7 +422,7 @@ div.btn_fixed {
     border:none;
     height: 100px;
     width: 100PX;
-    z-index: 20;
+    z-index: 2;
     border-radius: 50%;
 }
 div.btn_fixed img {
@@ -253,16 +436,24 @@ div.btn_fixed img {
     margin: auto;
     position: absolute;
 }
+/* ===以下為區塊介紹=== */
 
 div.spaceblock{
     height:400px;
-    background-color: rgba(240, 207,101,0.3); 
+    background-color: rgba(240, 207,101,0.3);
     margin-top: 100px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+@media (max-width: 768px) {
+    div.spaceblock{
+        max-height: 100%;
+        flex-direction: column;
+        width: 100%;
+    }
 }
 div.spaceblock h1.declare{
     text-align: center;
@@ -272,13 +463,19 @@ div.spaceblock h1.declare{
 
 div.spaceblock2{
     height:400px;
-    background-color: rgba(240, 207,101,0.3); 
+    background-color: rgba(240, 207,101,0.3);
     /* margin-top: 100px; */
     text-align: center;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+}
+@media (max-width: 768px) {
+    div.spaceblock2{
+        height: 100%;
+        
+    }
 }
 div.spaceblock2 h1.declare{
     text-align: center;
@@ -287,20 +484,27 @@ div.spaceblock2 h1.declare{
 }
 div.spaceblock2 .spaceimg2{
     opacity: 0.9;
+    width: 100%;
+    height: 100%;
     /* width: 500px; */
+}
+@media (max-width: 768px) {
+    .declare,.spaceimg2{
+       font-size: 1.5rem;
+       padding: 10px;
+    }
 }
 
 
-
-
+/* ===以下為輪播圖== */
 div.swiper-container{
-    height: 500px; 
+    height: 500px;
     /* margin-bottom: 20px; */
 }
 
 div.swiper-slide{
     /* height: 400px; */
-    
+
     /* background-image: url(./image/背景圖/pexels-ann-h-3482443.jpg); */
     background-repeat: no-repeat;
     /* background-size: 1100px 734px; */
@@ -308,7 +512,7 @@ div.swiper-slide{
     background-color: #DDEDAA;
     opacity: 80%;
     font-family:'Noto Sans TC', sans-serif !important;
-     
+
 }
 
 div.swiper-slide p{
@@ -324,7 +528,7 @@ div.swiper-slide p{
 
 
 .map {
-    display: block; 
+    display: block;
     background-color: rgba(240, 207,101,0.3);
     box-shadow:0px 0px 2px 0px rgba(240, 207,101,0.5) inset;
     height: 300px;
@@ -332,7 +536,7 @@ div.swiper-slide p{
     max-width: 100%;
     /* padding-bottom: 75%; */
     margin: 0 auto;
-    
+
     }
 .map iframe#map_1 {
     /* position: absolute; */
@@ -345,53 +549,70 @@ div.swiper-slide p{
     }
 
  /* 以下為footer區域 */
+    /* @media (max-width: 576px) {
+        footer.footer{
+            height: 800px;
+            flex-direction: column;
+        }
+    } */
 
 footer{
-        
         margin: 0 auto;
-        display: flex;
-        /* justify-content: center; */
+        /* display: flex; */
+        justify-content: center;
         align-items: center;
-        width: 100%; 
+        /* width: 100%; */
         max-width: 1920px;
         background-color: rgba(240, 207,101,0.3);
         box-shadow:0px 0px 2px 0px rgba(240, 207,101,0.5) inset;
-        height:200px;
-        display: flex;
-        justify-content: center;
-        /* justify-content:space-between; */
-        align-items: center;
+        height:250px;
+        display: flex;  
 }
+@media (max-width: 768px) {
+        footer{
+            height: 100%; 
+            /* max-height: 600px;  */
+            display: flex;        
+        }
+    }
 
-div.footer_content{
-    /* border:2px solid blue; */
-    
-    
-    /* flex-direction: ; */
-    /* width: 1200px; */
-    /* max-width:100%; */
-    /* display: grid ;
-    grid-template-columns: 70px 70px 70px 190px 270px 400px;
-    grid-template-rows: auto;
-    grid-template-areas: 'first first_1 first_2 second third fourth';
-    padding: 10px;
-    gap: 15px; */
-    /* margin: 0 auto; */
-}
 div.foot-controller{
-    width: 1200px;
+    width: 100%;
+    max-width: 1600px;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+@media (max-width: 768px) {
+    div.foot-controller{
+        height: 100%;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    h3.word{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+div.icon_controller{
+    width: 300px;
+    /* display: inline-block; */
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
 div.grid_item1,div.grid_item2,div.grid_item3{
-    width: 70px;
+    width: 90px;
     text-align: center;
     /* height: 150px; */
     margin-left: 20px;
     margin-right: 20px;
-} 
+}
+
 div.grid_item4,div.grid_item5{
     width:200px;
     height: 150px;
@@ -400,15 +621,41 @@ div.grid_item4,div.grid_item5{
     margin-right: 20px;
     font-weight: bolder;
     text-align: center;
+    /* flex-shrink: 0; */
 }
 div.grid_item6{
     width: 400px;
     height: 150px;
     margin-left: 20px;
     margin-right: 20px;
+    /* flex-grow: 1; */
 }
-
-
+@media (max-width: 576px) {
+    div.grid_item4,div.grid_item5,div.grid_item6{
+        width: 100%;
+        max-width: 400px;
+    }
+}
+@media (max-width: 576px) {
+    h3.word{
+        /* display: block;
+        justify-content: center;
+        align-items: center; */
+        /* text-align: center; */
+        padding: 10px;
+        text-align: center;
+    }
+}
+@media (max-width: 576px) {
+     p.secret{
+        /* display: block;
+        justify-content: center;
+        align-items: center; */
+        text-align: center;
+        padding: 5px;
+        display: flex;
+    }
+}
 .grid_item1 img{
     /* grid-area: first; */
     /* max-width:20%; */
@@ -427,7 +674,7 @@ div.grid_item6{
     /* max-width:20%; */
     object-fit: contain;
     object-position: center;
-    
+
 }
 
 .grid_item5 p.word{
@@ -442,19 +689,23 @@ div.grid_item6{
     text-align:center;
     margin-top: 0;
 }
-.grid_item6 p.service{
+.grid_item6{
+    width: 100%;
+    max-width: 770px;
+}    
+.grid_item6 .word{
     /* font-size: 32px; */
     font-weight: bolder;
-    text-align:justify;
+    
     margin-bottom: 0;
-    margin-top: 50px;
+    margin-top: 30px;
 }
-.grid_item6 p.secret{
+.grid_item6 .secret{
     font-size: 10px;
     opacity: 60%;
     /* font-weight: bolder; */
     text-align:justify;
-    margin-top: 0;
+    margin-top: 1.5rem;
 }
 
 
@@ -463,4 +714,3 @@ div.grid_item6{
     text-align: center;
     font-size: large;
 } */
-

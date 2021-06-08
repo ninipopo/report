@@ -35,8 +35,9 @@
                         <li><a href="./page1.html">關於我們</a></li>
                         <li><a href="./page2.html">退休要諮商?</a></li>
                         <li><a href="./page3.html">享退初評估</a></li>
-                        <li><a href="#">選購諮商專案</a></li>
-                        <li><a href="#">退休好文</a></li>
+                        <li><a href="./page4.html">選購諮商專案</a></li>
+                        <li><a href="./page5.html">退休好文</a></li>
+                        <li><a href="./index.html">回到首頁</a></li>
                       </ul>
                     </div>
                   </div>
@@ -74,12 +75,16 @@
             <label class="container"><input type="checkbox"><span class="checkmark"></span><h2>女性</h2></label>
           </div>
           <!-- 複選 -->
-          <div class="identify_1">
-            <h2>年齡：</h2> 
-            <label class="container"><input type="checkbox"><span class="checkmark"></span><h2>30歲</h2></label>
-            <label class="container"><input type="checkbox"><span class="checkmark"></span><h2>40歲</h2></label>
-            <label class="container"><input type="checkbox"><span class="checkmark"></span><h2>45歲</h2></label>
-            <label class="container"><input type="checkbox"><span class="checkmark"></span><h2>50歲</h2></label>
+          <div id="rwd">
+              <div class="identify_1">
+                <h2>年齡：</h2> 
+                <label class="container"><input type="checkbox"><span class="checkmark"></span><h2>30歲</h2></label>
+                <label class="container"><input type="checkbox"><span class="checkmark"></span><h2>40歲</h2></label>
+              </div>
+                <div class="identify_1">
+                <label class="container"><input type="checkbox"><span class="checkmark"></span><h2>45歲</h2></label>
+                <label class="container"><input type="checkbox"><span class="checkmark"></span><h2>50歲</h2></label>
+              </div>
           </div>
         </div> 
         <div id="bottom">
@@ -98,9 +103,12 @@
                   <label class="container"><input type="checkbox"><span class="checkmark"></span><h2>完全不符合</h2></label>
                 </div>
                   <!-- 單選 -->
-                <input type="range" min="0" max="5" name="range-number" width="200px">
+                
                 <div class="button">
                   <a href="#"><button id="submit">下一題</button></a>
+                </div>
+                <div class="bar">
+                  <input type="range" min="0" max="5" name="range-number" width="200px">
                 </div>
                 
           </div>

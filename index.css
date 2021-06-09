@@ -11,22 +11,41 @@ body{
     width: 1920px;
 }
 h1{
-    font-size: 48px;
+    font-size: 72px;
     text-align: center;
+    font-weight: bolder;
 }
 h2{
-    font-size: 36px;
+    font-size: 48px;
+    font-weight: bolder;
 }
 h3{
     font-size: 32px;
+    font-weight: bolder;
 }
 h4{
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bolder;
 }
 p{
     font-size: 28px;
     text-align: center;
+}
+@media (max-width: 376px) {
+    h1{
+        font-size: 32px;
+}
+}
+
+@media (max-width: 376px) {
+    h3{
+        font-size: 24px;
+}
+}
+@media (max-width: 799px){
+    h4{
+        font-size: 18px;      
+}
 }
 /* main{
     width:1920px;
@@ -292,7 +311,7 @@ li.nav:hover {
     max-width:1920px;
     /* margin-top: 40px; */
     position:relative;
-    background-image: url(./image/page1/banner.jpg);
+    background-image: url(./image/page1/banner.png);
     box-shadow:0px 0px 10px rgba(0, 0,0,0.5);
     box-shadow:0px 0px 2px 0px rgba(240, 207,101,0.5) inset;
     background-position:50% 30%;
@@ -301,7 +320,7 @@ li.nav:hover {
     /* transform:translateY( 30px) ; */
 }
 @media (min-width: 1920px){
-    div.banner{background-image: url(./image/page1/banner.jpg)}
+    div.banner{background-image: url(./image/page1/banner.png)}
 }
 @media screen and (min-width: 575px) and (max-width: 768px){
     div.banner{background-image: url(./image/page1/finacil6.jpg)}
@@ -335,26 +354,83 @@ div.guide_1{
     display: flex;
     height: 400px;
     padding: 20px;
+    width: 100%;
     flex-direction:row-reverse;
 }
-
+@media (max-width: 768px) {
+    div.guide_1{
+    flex-direction: column; 
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    }
+}
+@media (max-width: 768px) {
+    div.guide_1  .img1{
+        display: none;
+    }
+}
 div.guide_2{
     display: flex;
     height: 400px;
     padding: 20px;
-    align-items:cent;
+    width: 100%;
+    align-items:center;
+}
+@media (max-width: 768px) {
+    div.guide_2{
+    flex-direction: column; 
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    }
+}
+@media (max-width: 768px) {
+    div.guide_2 .img2{
+        display: none;
+    }
 }
 div.guide_3{
     display: flex;
     height: 400px;
     padding: 20px;
+    width: 100%;
     flex-direction:row-reverse;
+}
+@media (max-width: 768px) {
+    div.guide_3{
+    flex-direction: column; 
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    }
+}
+@media (max-width: 768px) {
+    div.guide_3  .img3{
+        display: none;
+    }
 }
 div.guide_4{
     display: flex;
     height: 400px;
     padding: 20px;
+    width: 100%;
+    align-items:center;
 }
+@media (max-width: 768px) {
+    div.guide_4{
+    flex-direction: column; 
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    }
+}
+@media (max-width: 768px) {
+    div.guide_4  .img4{
+        display: none;
+    }
+}
+
 div.first,.second,.third,.forth{
     padding: 20px;
 }
@@ -397,7 +473,7 @@ div.img4,div.img4_1{
     cursor: pointer;
     /* filter:sepia(50%) */
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .guide {
         height: 100%;  
         width: 100%; 
@@ -415,7 +491,7 @@ div.img4,div.img4_1{
         height: 100%;  
         width: 100%; 
     }
-}
+} */
 
 
 /* ====以下為fixed btn=== */
@@ -481,6 +557,7 @@ div.spaceblock2{
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
+    padding-top: 15px;
 }
 @media (max-width: 768px) {
     div.spaceblock2{
@@ -520,7 +597,7 @@ div.swiper-slide{
     background-repeat: no-repeat;
     /* background-size: 1100px 734px; */
     background-position:50% 30%;
-    background-color: #DDEDAA;
+    /* background-color: #DDEDAA; */
     opacity: 80%;
     font-family:'Noto Sans TC', sans-serif !important;
 
@@ -532,7 +609,7 @@ div.swiper-slide p{
     font-size: 2.5rem;
     background-color:#575655 ;
     opacity: 80%;
-    width: 1200px;
+    width: 100%;
     left:20px;
 }
 

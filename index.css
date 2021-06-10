@@ -515,9 +515,7 @@ div.img4,div.img4_1{
 
 
 /* ====以下為fixed btn=== */
-@media (max-width: 768px) {
-    div.btn_fixed{display: none;}
-}
+
 div.btn_fixed {
     bottom: 0;
     right: 0;

@@ -46,6 +46,11 @@ div.guide{
 div.guide h1{
     text-align: center;
 }
+@media (max-width: 1199px) {
+    div.guide h1{
+    text-align: justify;
+    }
+}
 div.connect_index-1{
     display: flex;
     justify-content:space-between;

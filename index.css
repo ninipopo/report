@@ -527,7 +527,7 @@ div.btn_fixed img {
 
 div.spaceblock{
     height:400px;
-    background-color: rgba(240, 207,101,0.3);
+    background-color: rgba(235, 198, 132, 0.6);
     margin-top: 100px;
     text-align: center;
     display: flex;
@@ -551,7 +551,7 @@ div.spaceblock h1.declare{
 
 div.spaceblock2{
     height:500px;
-    background-color: rgba(240, 207,101,0.3);
+    background-color: rgba(170, 170,170,.1);
     /* margin-top: 100px; */
     text-align: center;
     display: flex;

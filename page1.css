@@ -123,15 +123,20 @@ div.layer_2{
 }
 
 p#introduce{
-    font-size: 24px;
+    font-size: 28px !important;
     font-weight: bold;
-    width: 600px;
-    text-align: start;
-    padding: 100px;
+    width: 700px;
+    text-align: justify;
+    padding: 80px;
 }
 @media (max-width: 1199px) {
     p#introduce{
         padding: 0;
+    }
+}
+@media (max-width: 799px) {
+    p#introduce{
+        width: 100%;
     }
 }
 /* ===以下為各類介紹=== */

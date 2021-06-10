@@ -437,9 +437,22 @@ div.guide_4{
     }
 }
 
-div.first,.second,.third,.forth{
+div.first,div.second,div.third,div.forth{
     padding: 20px;
 }
+div.first p{
+    text-align: justify;
+}
+div.second p{
+    text-align: justify;
+}
+div.third p{
+    text-align: justify;
+}
+div.forth p{
+    text-align: justify;
+}
+
 div.img1{
     position: relative;
 }

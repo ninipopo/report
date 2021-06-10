@@ -77,7 +77,7 @@ header{
 } */
 
 @media (max-width: 768px) {
-    header,nav{display: none;}
+    nav{display: none;}
 }
 div.head_1{
     width:300px;
@@ -320,10 +320,16 @@ li.nav:hover {
     /* transform:translateY( 30px) ; */
 }
 @media (min-width: 1920px){
-    div.banner{background-image: url(./image/page1/banner.png)}
+    div.banner{
+        background-image: url(./image/page1/banner.png);
+        height: 400px;
+    }    
 }
-@media screen and (min-width: 575px) and (max-width: 768px){
-    div.banner{background-image: url(./image/page1/finacil6.jpg)}
+@media screen and (min-width: 0px) and (max-width: 768px){
+    div.banner{
+        background-image: url(./image/page1/finacil6.jpg);
+        height: 300px;
+    }
 }
 
 .banner img{

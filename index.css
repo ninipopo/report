@@ -618,7 +618,7 @@ div.swiper-slide{
     background-repeat: no-repeat;
     /* background-size: 1100px 734px; */
     background-position:50% 30%;
-    /* background-color: #DDEDAA; */
+    background-color: rgba(170, 170,170,.1);
     opacity: 80%;
     font-family:'Noto Sans TC', sans-serif !important;
     

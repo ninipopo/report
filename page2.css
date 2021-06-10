@@ -91,6 +91,7 @@ div.connect_index-1 >a{
     div.connect_index-1 a{
         height:250px;
         width:250px;
+        z-index: 2;
     }
 }
 @media (max-width: 1199px) {

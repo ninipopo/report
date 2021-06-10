@@ -348,9 +348,10 @@ li.nav:hover {
 div.guide_section{
     display: flex;
     height:400px;
+    width: 1200px;
     /* flex-direction: column; */
 }
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
     .guide_section {
         height: 100%;  
         width: 100%;
@@ -628,8 +629,7 @@ div.swiper-slide{
 div.swiper-slide p{
     color: white;
     font-family:'Noto Sans TC', sans-serif !important;
-    font-size: 3rem;
-    background-color:#575655 ;
+    font-size: 4rem;
     opacity: 80%;
     width: 100%;
     left:20px;

@@ -33,11 +33,13 @@ h5{
     font-weight: bolder;
     text-align: justify;
     text-overflow : ellipsis;
+    padding: 5px;
 }
 p{
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     text-align: justify;
+    
 }
 a{
     text-decoration: none;
@@ -57,6 +59,12 @@ a{
 @media (max-width: 799px){
     h4{
         font-size: 18px;      
+}
+}
+@media (max-width: 799px){
+    p{
+        font-size: 16px;
+        margin: 5px;      
 }
 }
 /* main{
@@ -465,9 +473,7 @@ div.img1,div.img1_1{
 
 
 /* ====以下為fixed btn=== */
-@media (max-width: 768px) {
-    div.btn_fixed{display: none;}
-}
+
 div.btn_fixed {
     bottom: 0;
     right: 0;

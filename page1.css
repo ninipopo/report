@@ -181,9 +181,3 @@ div.block:nth-child(4){
     background-color: rgba(240, 207,101,0.3);
     
 }
-@media (max-width: 376px) {
-    .block>h3{
-        /* font-size: 20px; */
-        -webkit-writing-mode: vertical-lr;
-    }
-}

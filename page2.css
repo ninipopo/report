@@ -163,8 +163,8 @@ div.clickcontent{
     height: 500px;
     width: 100%;
     display: flex;
-    margin-bottom:200px;
-    margin-top:200px;
+    margin-bottom:60px;
+    margin-top:60px;
 }
 @media (max-width: 796px) {
     div.clickcontent{
@@ -179,23 +179,27 @@ div.clickcontent{
     flex-direction: column;
     flex-wrap: wrap;
     height: 100%;
-    margin-bottom:100px;
-    margin-top:100px;
+    margin-bottom:50px;
+    margin-top:50px;
     }
 }
 
 
 
 div.content_1,div.content_2,div.content_3,div.content_4{
-    height: 500px;
+    /* height: 500px; */
     width: 100%;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
+    /* padding-bottom: 40px; */
 }
-
+div.content_1,div.content_3{
+    order:-1;
+}
 
 .content_1>h2{
     width: 400px;   

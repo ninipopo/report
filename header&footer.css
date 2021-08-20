@@ -256,6 +256,9 @@ li.nav:hover {
 /*==== show menu=== */
 .menu_wrap .toggler:checked~ .menu_2{
     visibility: visible;
+    pointer-events: auto;
+    /* 可以控制不被點到 */
+    
 }
 .menu_wrap .toggler:checked~ .menu_2 >div{
     transform: scale(1);
@@ -285,6 +288,8 @@ li.nav:hover {
     position: absolute;
     left: 0;
     top: 80px;
+    pointer-events: none;
+    /* 只有打開會被點到 */
 }
 
 .menu_wrap .menu_2 >div{

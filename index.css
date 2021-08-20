@@ -155,18 +155,16 @@ li.nav:hover {
     transition:transform 0.25s ease;
 }
 /* ===這裡是hamburger==== */
-@media (min-width: 767px) {
-    div.menu_wrap{display: none;}
-}
-/* @media screen (min-width: 574px) {
-    div.menu_wrap{display: block;}
-} */
+
 .menu_wrap{
-    position:relative;
+    /* position:relative; */
     /* display: none; */
     right:0;
     top:0;
     z-index:1;
+}
+@media (min-width: 767px) {
+    div.menu_wrap{display: none;}
 }
 .menu_wrap .toggler{
     position: absolute;
@@ -235,6 +233,7 @@ li.nav:hover {
 /*==== show menu=== */
 .menu_wrap .toggler:checked~ .menu_2{
     visibility: visible;
+    pointer-events: auto;
 }
 .menu_wrap .toggler:checked~ .menu_2 >div{
     transform: scale(1);
@@ -263,7 +262,8 @@ li.nav:hover {
 .menu_2{
     position: absolute;
     left: 0;
-    top: 80px;
+    pointer-events: none;
+    /* 只有打開會被點到 */
 }
 
 .menu_wrap .menu_2 >div{
@@ -311,7 +311,7 @@ li.nav:hover {
     width: 100%;
     max-width:1920px;
     /* margin-top: 40px; */
-    position:relative;
+    /* position:relative; */
     background-image: url(./image/page1/banner.png);
     box-shadow:0px 0px 10px rgba(0, 0,0,0.5);
     box-shadow:0px 0px 2px 0px rgba(240, 207,101,0.5) inset;
@@ -341,7 +341,7 @@ li.nav:hover {
     height: auto;
     margin: 0;
     border: 0;
-    position: absolute;
+    /* position: absolute; */
     top: -60px;
     /* left: 480px; */
 }
@@ -840,3 +840,37 @@ div.grid_item6{
     text-align: center;
     font-size: large;
 } */
+
+
+/* ===套件部分=== */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

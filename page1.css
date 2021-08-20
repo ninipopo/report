@@ -2,9 +2,9 @@
     box-sizing: border-box;
     font-family:'Noto Sans TC', sans-serif !important;
 } */
-img{
+/* img{
     width: 100%;
-}
+} */
 div.top{
     /* display: flex; */
     height: 100%;
@@ -66,18 +66,19 @@ div.layer_1{
 
 div.introduce{
     display: flex;
-    flex-wrap: wrap; 
+    flex-direction: column;
+    /* flex-wrap: wrap;  */
     width: 100%; 
 }
 
 div.attachment{
     height: 450px;
-    max-width:796px;
+    /* max-width:796px; */
     width: 100%;
     background-color: rgba(240, 207,101,0.3);
     background-image: url(./image/main-content/health8.jpg);
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 40%;
     background-position: 50% 80%;
     top: -25px;
     display: flex;
@@ -145,6 +146,7 @@ div.bottombox{
     height: 400px;
     justify-content: space-around;
     margin-bottom: 100px;
+    position: relative;
 }
 @media (max-width: 796px) {
     div.bottombox{
@@ -160,14 +162,41 @@ div.block{
     justify-content: center;
     align-items: center;
     padding: 15px;
-    width: 100%;
+    width: 100%;   
+}
+img#health{
+    opacity: 0.4;
+    z-index: -1;
+    margin: 5px;
+    position: absolute;
+    width: 20%;
+}
+img#finacial{
+    opacity: 0.4;
+    z-index: -1;
+    margin: 5px;
+    position: absolute;
+    width: 20%;
+}
+img#relationship{
+    opacity: 0.4;
+    z-index: -1;
+    margin: 5px;
+    position: absolute;
+    width: 20%;
+}
+img#retire{
+    opacity: 0.4;
+    z-index: -1;
+    margin: 5px;
+    position: absolute;
+    width: 20%;
 }
 div.block h4{
     padding: 15px;
 }
 div.block:nth-child(1){
-    background-color: rgba(170, 170,170,.1);
-    
+    background-color: rgba(170, 170,170,.1);    
 }
 div.block:nth-child(2){
     background-color: rgba(240, 207,101,0.3);
@@ -181,3 +210,5 @@ div.block:nth-child(4){
     background-color: rgba(240, 207,101,0.3);
     
 }
+
+
